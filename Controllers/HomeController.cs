@@ -17,6 +17,10 @@ namespace DreamProperties.Controllers
         {
             return View();
         }
+        public void SendMessage()
+        {
+            // Code
+        }
 
         public IActionResult Privacy()
         {
