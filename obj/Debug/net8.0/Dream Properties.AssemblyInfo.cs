@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dream Properties")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a0062692c4f1ae0b859066611636930ab08fa891")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dream Properties")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dream Properties")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,35 @@
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\bin\Debug\net8.0\appsettings.json
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\bin\Debug\net8.0\Dream Properties.staticwebassets.runtime.json
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\bin\Debug\net8.0\Dream Properties.staticwebassets.endpoints.json
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\bin\Debug\net8.0\Dream Properties.exe
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\bin\Debug\net8.0\Dream Properties.deps.json
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\bin\Debug\net8.0\Dream Properties.runtimeconfig.json
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\bin\Debug\net8.0\Dream Properties.dll
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\bin\Debug\net8.0\Dream Properties.pdb
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\obj\Debug\net8.0\Dream Properties.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\obj\Debug\net8.0\Dream Properties.AssemblyInfoInputs.cache
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\obj\Debug\net8.0\Dream Properties.AssemblyInfo.cs
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\obj\Debug\net8.0\Dream Properties.csproj.CoreCompileInputs.cache
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\obj\Debug\net8.0\Dream Properties.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\obj\Debug\net8.0\Dream Properties.RazorAssemblyInfo.cache
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\obj\Debug\net8.0\Dream Properties.RazorAssemblyInfo.cs
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\obj\Debug\net8.0\Dream Properties.sourcelink.json
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\obj\Debug\net8.0\scopedcss\bundle\Dream Properties.styles.css
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\obj\Debug\net8.0\scopedcss\projectbundle\Dream Properties.bundle.scp.css
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\obj\Debug\net8.0\staticwebassets\msbuild.Dream Properties.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\obj\Debug\net8.0\staticwebassets\msbuild.Dream Properties.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\obj\Debug\net8.0\staticwebassets\msbuild.build.Dream Properties.props
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Dream Properties.props
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Dream Properties.props
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\obj\Debug\net8.0\Dream Properties.dll
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\obj\Debug\net8.0\refint\Dream Properties.dll
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\obj\Debug\net8.0\Dream Properties.pdb
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\obj\Debug\net8.0\Dream Properties.genruntimeconfig.cache
+C:\Users\91869\Desktop\Dot_Net Core Proj\Dream Properties\Dream Properties\obj\Debug\net8.0\ref\Dream Properties.dll

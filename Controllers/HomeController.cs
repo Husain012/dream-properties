@@ -13,6 +13,12 @@ public class HomeController : Controller
         _logger = logger;
     }
 
+    public void SendMessage(Object obj)
+    
+    {
+        // Code to save in databse
+    }
+
     public IActionResult Index()
     {
         return View();
