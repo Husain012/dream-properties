@@ -3,33 +3,182 @@
 }
 
 <div class="form">
-<form asp-action="SendMessage" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
-    <div class="row gy-4">
-
-        <div class="col-md-6">
-            <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+    <form id="contactForm" method="post" role="form" class="php-email-form">
+        <div class="row">
+            <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+            </div>
         </div>
 
-        <div class="col-md-6 ">
-            <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+        <div class="form-group">
+            <input type="text" class="form-control" name="subject" placeholder="Subject" required>
         </div>
 
-        <div class="col-md-12">
-            <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+        <div class="form-group">
+            <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
         </div>
 
-        <div class="col-md-12">
-            <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-        </div>
-
-        <div class="col-md-12 text-center">
-            <div class="loading">Loading</div>
+        <div class="my-3">
+            <div class="loading" style="display: none;">Loading...</div>
             <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-
-            <button type="submit">Send Message</button>
+            <div class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
         </div>
 
-    </div>
-</form><!-- End Contact Form -->
+        <div class="text-center"><button type="submit">Send Message</button></div>
+    </form>
 </div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#contactForm').submit(function (event) {
+                event.preventDefault();
+
+                $(".loading").show(); // Show loading indicator
+
+                var formData = {
+                    name: $("input[name=name]").val(),
+                    email: $("input[name=email]").val(),
+                    subject: $("input[name=subject]").val(),
+                    message: $("textarea[name=message]").val()
+                };
+
+                $.ajax({
+                    type: 'POST',
+                    url: '@Url.Action("SendMessage", "Home")',
+                    contentType: 'application/json',  // Ensure JSON is sent
+                    data: JSON.stringify(formData),  // Convert form data to JSON
+                    dataType: 'json', // Expect JSON response
+                    success: function (response) {
+                        $(".loading").hide(); // Hide loading indicator
+
+                        if (response.success) {
+                            $('.sent-message').text(response.message).show();
+                            $('.error-message').hide();
+                            $("#contactForm")[0].reset();
+                        } else {
+                            $('.error-message').text(response.message || "There was an error. Please try again.").show();
+                            $('.sent-message').hide();
+                        }
+                    },
+                    error: function (xhr) {
+                        $(".loading").hide(); // Hide loading indicator
+                        var errorMessage = "An error occurred. Please try again later.";
+
+                        if (xhr.responseJSON && xhr.responseJSON.message) {
+                            errorMessage = xhr.responseJSON.message;
+                        }
+
+                        $('.error-message').text(errorMessage).show();
+                        $('.sent-message').hide();
+                    }
+                });
+            });
+        });
+    </script>
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@* @{ *@
+@*     ViewData["Title"] = "Home Page"; *@
+@* } *@
+
+@* <div class="form"> *@
+@*   <form id="contactForm" method="" role="form" class="php-email-form" > *@
+@*       <div class="row"> *@
+
+@*         <div class="form-group col-md-6"> *@
+@*             <input type="text" name="name" class="form-control" placeholder="Your Name" required> *@
+@*         </div> *@
+
+@*         <div class="form-group col-md-6 "> *@
+@*             <input type="email" class="form-control" name="email" placeholder="Your Email" required> *@
+@*         </div> *@
+@*       </div> *@
+@*         <div class="form-group"> *@
+@*             <input type="text" class="form-control" name="subject" placeholder="Subject" required> *@
+@*         </div> *@
+
+@*         <div class="form-group"> *@
+@*             <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea> *@
+@*         </div> *@
+       
+@*         <div class="my-3"> *@
+@*             <div class="loading">Loading</div> *@
+@*             <div class="error-message"></div> *@
+@*             <div class="sent-message">Your message has been sent. Thank you!</div> *@
+@*         </div> *@
+@*          <div class="text-center"><button type="submit">Send Message</button></div>  *@
+@*   </form><!-- End Contact Form --> *@
+@* </div> *@
+
+@* @section Scripts { *@
+@*     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> *@
+
+@*     <script> *@
+@*         $(document).ready(function () { *@
+@*             $('#contactForm').submit (function (event) { *@
+@*                 event.preventDefault(); *@
+
+@*                 var formData = { *@
+@*                     name: $("input[name=name]").val(), *@
+@*                     email: $("input[name=email]").val(), *@
+@*                     subject: $("input[name=subject]").val(), *@
+@*                     message: $("textarea[name=message]").val() *@
+@*                 }; *@
+
+@*                 $.ajax({ *@
+@*                     type: 'POST', *@
+@*                     url: '@Url.Action("SendMessage", "Home")', *@
+@*                     data: formData,  *@
+@*                     success: function (response) { *@
+@*                         if (response.success) { *@
+@*                             $('.sent-message').text(response.responseText).show(); *@
+@*                             $('.error-message').hide(); *@
+
+@*                             $("#contactForm")[0].reset(); *@
+@*                         } else { *@
+@*                             $('.error-message').text("There was an error. Please try again.").show(); *@
+@*                             $('.sent-message').hide(); *@
+@*                         } *@
+@*                     }, *@
+@*                     error: function () { *@
+@*                         $('.error-message').text('An error occurred. Please try again later.').show(); *@
+@*                         $('.sent-message').hide(); *@
+@*                     } *@
+@*                 }); *@
+@*             }); *@
+@*         }); *@
+@*     </script> *@
+@* } *@
